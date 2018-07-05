@@ -8,7 +8,15 @@ body {
     min-height: 100vh;
 }
 footer {
+    /* space */
     margin-top: auto;
-    background-color: gray;
+    padding: 2vh 0;
+
+    /* background */
+    background-color: hsl(0, 0%, 96%);
+
+    /* text */
     text-align: center;
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 50%);
 }
