@@ -80,3 +80,26 @@ footer {
     color: hsl(0, 0%, 50%);
 }
 
+.pagination {
+    /* flex */
+    display: flex;
+    justify-content: center;
+
+    /* space */
+    padding: 0;
+
+    /* list */
+    list-style: none;
+}
+.pagination li { padding: 0 10px; }
+.pagination li a { text-decoration: none; color: black; }
+.pagination li.active { background-color: hsl(0, 0%, 76%); border-radius: 2px; }
+.pagination li.disabled a { cursor: default; pointer-events: none; color: hsl(0, 0%, 76%); }
+.pagination li:first-child span { font-size: 0 }
+.pagination li:first-child span:after { font-size: 1rem; content: "<<";}
+.pagination li:nth-child(2) span { font-size: 0 }
+.pagination li:nth-child(2) span:after { font-size: 1rem; content: "<"; }
+.pagination li:nth-last-child(2) span { font-size: 0 }
+.pagination li:nth-last-child(2) span:after { font-size: 1rem; content: ">"; }
+.pagination li:last-child span { font-size: 0 }
+.pagination li:last-child span:after { font-size: 1rem; content: ">>"; }
