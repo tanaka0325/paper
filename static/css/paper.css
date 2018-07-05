@@ -15,10 +15,14 @@ body {
     /* space */
     padding: 0 1vh;
 }
-header {
-}
-main {
-}
+
+main h1 { font-size: 1.5rem }
+main h2 { font-size: 1.4rem }
+main h3 { font-size: 1.3rem }
+main h4 { font-size: 1.2rem }
+main h5 { font-size: 1.1rem }
+main h6 { font-size: 1.0rem }
+
 footer {
     /* space */
     margin-top: auto;
@@ -32,3 +36,4 @@ footer {
     font-size: 0.8rem;
     color: hsl(0, 0%, 50%);
 }
+
