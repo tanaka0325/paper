@@ -92,7 +92,7 @@ header h2 a {
 }
 .article-list li {
     /* space */
-    margin: 10px 0;
+    margin: 0.4rem 0;
     /* flex */
     display: flex;
     align-items: center;
