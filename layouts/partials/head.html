@@ -1,0 +1,17 @@
+<head>
+    {{ .Hugo.Generator }}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bulma.min.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/reading.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
+
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
+</head>
+
