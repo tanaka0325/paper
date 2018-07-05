@@ -41,6 +41,31 @@ main h4 { font-size: 1.2rem }
 main h5 { font-size: 1.1rem }
 main h6 { font-size: 1.0rem }
 
+main .article-list {
+    /* space */
+    margin: 0;
+    padding: 0;
+
+    /* list */
+    list-style: none;
+}
+main .article-list li {
+    /* space */
+    margin: 10px 0;
+
+    /* flex */
+    display: flex;
+    align-items: center;
+}
+main .article-list .date {
+    /* space */
+    margin-right: 10px;
+
+    /* font */
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 50%);
+}
+
 footer {
     /* space */
     margin-top: auto;
@@ -49,7 +74,7 @@ footer {
     /* background */
     background-color: hsl(0, 0%, 96%);
 
-    /* text */
+    /* font */
     text-align: center;
     font-size: 0.8rem;
     color: hsl(0, 0%, 50%);
