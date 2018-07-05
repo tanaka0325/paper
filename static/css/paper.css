@@ -70,6 +70,7 @@ main { margin-bottom: 1vh; }
 }
 .article-page blockquote {
     /* space */
+    margin: 0;
     padding: 0.1rem 0.7rem;
     /* background */
     background-color: hsl(0, 0%, 95%);
