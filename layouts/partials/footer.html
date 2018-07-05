@@ -1,5 +1,14 @@
 <footer>
     <div class="copyright">
         &copy; {{ now.Format "2006" }} {{ .Site.Params.Author }}
+        {{ with .Site.Params.github }}
+            <a href="{{ . }}"><img src="/image/github.png" width="15"/></a>
+        {{ end }}
+        {{ with .Site.Params.twitter }}
+            <a href="{{ . }}"><img src="/image/twitter.png" width="16"/></a>
+        {{ end }}
+        {{ with .Site.Params.facebook }}
+            <a href="{{ . }}"><img src="/image/facebook.png" width="16"/></a>
+        {{ end }}
     </div>
 </footer>
