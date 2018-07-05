@@ -7,7 +7,6 @@
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bulma.min.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/paper.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
 
