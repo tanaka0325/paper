@@ -68,6 +68,17 @@ main { margin-bottom: 1vh; }
     /* font */
     text-decoration: none;
 }
+.article-page blockquote {
+    /* space */
+    padding: 0.1rem 0.7rem;
+    /* background */
+    background-color: hsl(0, 0%, 95%);
+    /* border */
+    border-left: 0.3rem solid hsl(0, 0%, 50%);
+    /* font */
+    font-style: italic;
+    color: hsl(0, 0%, 50%);
+}
 .article-page pre { font-family: 'Source Code Pro', monospace }
 .article-page code { font-family: 'Source Code Pro', monospace }
 .article-page code:not(.hljs) {
