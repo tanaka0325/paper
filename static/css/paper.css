@@ -9,7 +9,15 @@ body {
     /* size */
     min-height: 100vh;
 }
-.container { padding: 0 1vh }
+@media screen and (max-width:480px) {
+    .container { padding: 0 1vh }
+}
+@media screen and (min-width:480px) and ( max-width:1024px) {
+    .container { padding: 0 2vh }
+}
+@media screen and (min-width:1024px) {
+    .container { padding: 0 5vh }
+}
 /* header */
 header { background-color: hsl(0, 0%, 96%) }
 header h2 {
