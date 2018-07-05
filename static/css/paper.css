@@ -1,4 +1,7 @@
-body { margin: 0 }
+body {
+    margin: 0;
+    font-size: 85%;
+}
 .main-container {
     /* flex */
     display: flex;
@@ -31,10 +34,10 @@ header h2 a {
     color: hsl(0, 0%, 50%);
 }
 .article-page h1 { font-size: 1.5rem }
-.article-page h2 { font-size: 1.4rem }
-.article-page h3 { font-size: 1.3rem }
-.article-page h4 { font-size: 1.2rem }
-.article-page h5 { font-size: 1.1rem }
+.article-page h2 { font-size: 1.3rem }
+.article-page h3 { font-size: 1.2rem }
+.article-page h4 { font-size: 1.1rem }
+.article-page h5 { font-size: 1.0rem }
 .article-page h6 { font-size: 1.0rem }
 .article-page .tags {
     /* flex */
