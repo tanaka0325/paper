@@ -56,6 +56,21 @@ header h2 a {
     /* font */
     text-decoration: none;
 }
+.article-page pre { font-family: 'Source Code Pro', monospace }
+.article-page code { font-family: 'Source Code Pro', monospace }
+.article-page code:not(.hljs) {
+    /* display */
+    display: inline-block;
+    /* space */
+    padding: 0 0.4rem;
+    /* bordar */
+    border: 1px solid #E1E1E1;
+    border-radius: 2px;
+    /* background */
+    background-color: #eeeeee;
+    /* font */
+    font-size: 0.9rem;
+}
 /* article list */
 .article-list {
     /* space */
