@@ -33,7 +33,7 @@ header h2 a {
     color: hsl(0, 0%, 0%);
 }
 /* article page */
-.article-page .title { margin-bottom: 0 }
+.title { margin-bottom: 0 }
 .article-page .date {
     /* space */
     margin: 0;
