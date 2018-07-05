@@ -63,7 +63,7 @@ header h2 a {
     padding: 0.3rem 0.5rem;
     border-radius: 0.5rem;
     /* background */
-    background-color: hsl(220, 100%, 95%);
+    background-color: hsl(0, 0%, 95%);
     /* font */
     text-decoration: none;
 }
