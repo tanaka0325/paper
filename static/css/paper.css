@@ -138,23 +138,4 @@ footer {
 .pagination li:nth-last-child(2) span:after { font-size: 1rem; content: ">" }
 .pagination li:last-child span { font-size: 0 }
 .pagination li:last-child span:after { font-size: 1rem; content: ">>" }
-/* goto top button */
-.goto-top {
-    /* flex */
-    display: flex;
-    flex-direction: row-reverse;
-    /* space */
-    margin-right: 0.5vh;
-}
-.goto-top p { margin: 0 }
-.goto-top a {
-    /* space */
-    padding: 0.6rem 0.9rem;
-    border-radius: 2rem;
-    /* background */
-    background-color: hsl(0, 0%, 76%);
-    /* font */
-    font-size: 1.2rem;
-    color: black;
-    text-decoration: none;
-}
+
