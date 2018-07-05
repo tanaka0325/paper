@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <article class="article-page">
+    <h1 class="title">{{ .Title }}</h1>
+    <p class="date">{{ .Date.Format "2006-01-02" }}</p>
+    <section>
+      {{ .Content }}
+    </section>
+    {{ if .Params.tags}}
+    <ul class="tags">
+      {{ range .Params.tags }}
+      <li>
+        <a href="{{ $.Site.LanguagePrefix | absURL }}tags/{{ . | urlize }}/">#{{ . }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </article>
+  <div class="goto-top">
+    <p class="goto-top"><a href="#">↑</a></p>
+  </div>
+{{ end }}

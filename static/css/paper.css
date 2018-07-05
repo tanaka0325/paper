@@ -1,105 +1,134 @@
-body {
-    /* space */
-    margin: 0;
-}
-
+body { margin: 0 }
 .main-container {
     /* flex */
     display: flex;
     flex-direction: column;
-
     /* size */
     min-height: 100vh;
 }
-.container {
-    /* space */
-    padding: 0 1vh;
-}
-
-header {
-    /* background */
-    background-color: hsl(0, 0%, 96%);
-}
+.container { padding: 0 1vh }
+/* header */
+header { background-color: hsl(0, 0%, 96%) }
 header h2 {
     /* space */
     margin: 0;
     padding: 2vh 0;
-
     /* font */
     font-size: 1.0rem;
 }
 header h2 a {
     /* font */
     text-decoration: none;
-    color: hsl(0, 0%, 0%)
+    color: hsl(0, 0%, 0%);
 }
-
-main h1 { font-size: 1.5rem }
-main h2 { font-size: 1.4rem }
-main h3 { font-size: 1.3rem }
-main h4 { font-size: 1.2rem }
-main h5 { font-size: 1.1rem }
-main h6 { font-size: 1.0rem }
-
-main .article-list {
+/* article page */
+.article-page .title { margin-bottom: 0 }
+.article-page .date {
     /* space */
     margin: 0;
-    padding: 0;
-
-    /* list */
-    list-style: none;
-}
-main .article-list li {
-    /* space */
-    margin: 10px 0;
-
-    /* flex */
-    display: flex;
-    align-items: center;
-}
-main .article-list .date {
-    /* space */
-    margin-right: 10px;
-
     /* font */
     font-size: 0.7rem;
     color: hsl(0, 0%, 50%);
 }
-
+.article-page h1 { font-size: 1.5rem }
+.article-page h2 { font-size: 1.4rem }
+.article-page h3 { font-size: 1.3rem }
+.article-page h4 { font-size: 1.2rem }
+.article-page h5 { font-size: 1.1rem }
+.article-page h6 { font-size: 1.0rem }
+.article-page .tags {
+    /* flex */
+    display: flex;
+    /* space */
+    margin: 0;
+    padding: 0;
+    /* list */
+    list-style: none;
+}
+.article-page .tags li { margin-right: 0.1rem }
+.article-page .tags li:last-child { margin-right: 0 }
+.article-page .tags a {
+    /* space */
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+    /* background */
+    background-color: hsl(220, 100%, 95%);
+    /* font */
+    text-decoration: none;
+}
+/* article list */
+.article-list {
+    /* space */
+    margin: 0;
+    padding: 0;
+    /* list */
+    list-style: none;
+}
+.article-list li {
+    /* space */
+    margin: 10px 0;
+    /* flex */
+    display: flex;
+    align-items: center;
+}
+.article-list .date {
+    /* space */
+    margin-right: 10px;
+    /* font */
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 50%);
+}
+/* footer */
 footer {
     /* space */
     margin-top: auto;
     padding: 2vh 0;
-
     /* background */
     background-color: hsl(0, 0%, 96%);
-
     /* font */
     text-align: center;
     font-size: 0.8rem;
     color: hsl(0, 0%, 50%);
 }
-
+/* pagination */
 .pagination {
     /* flex */
     display: flex;
     justify-content: center;
-
     /* space */
     padding: 0;
-
     /* list */
     list-style: none;
 }
-.pagination li { padding: 0 10px; }
-.pagination li a { text-decoration: none; color: black; }
-.pagination li.active { background-color: hsl(0, 0%, 76%); border-radius: 2px; }
-.pagination li.disabled a { cursor: default; pointer-events: none; color: hsl(0, 0%, 76%); }
+.pagination li { padding: 0 10px }
+.pagination li a { text-decoration: none; color: black }
+.pagination li.active { background-color: hsl(0, 0%, 76%); border-radius: 2px }
+.pagination li.disabled a { cursor: default; pointer-events: none; color: hsl(0, 0%, 76%) }
 .pagination li:first-child span { font-size: 0 }
-.pagination li:first-child span:after { font-size: 1rem; content: "<<";}
+.pagination li:first-child span:after { font-size: 1rem; content: "<<" }
 .pagination li:nth-child(2) span { font-size: 0 }
-.pagination li:nth-child(2) span:after { font-size: 1rem; content: "<"; }
+.pagination li:nth-child(2) span:after { font-size: 1rem; content: "<" }
 .pagination li:nth-last-child(2) span { font-size: 0 }
-.pagination li:nth-last-child(2) span:after { font-size: 1rem; content: ">"; }
+.pagination li:nth-last-child(2) span:after { font-size: 1rem; content: ">" }
 .pagination li:last-child span { font-size: 0 }
-.pagination li:last-child span:after { font-size: 1rem; content: ">>"; }
+.pagination li:last-child span:after { font-size: 1rem; content: ">>" }
+/* goto top button */
+.goto-top {
+    /* flex */
+    display: flex;
+    flex-direction: row-reverse;
+    /* space */
+    margin-right: 0.5vh;
+}
+.goto-top p { margin: 0 }
+.goto-top a {
+    /* space */
+    padding: 0.6rem 0.9rem;
+    border-radius: 2rem;
+    /* background */
+    background-color: hsl(0, 0%, 76%);
+    /* font */
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+}
