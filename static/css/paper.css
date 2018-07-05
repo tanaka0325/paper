@@ -1,11 +1,23 @@
 body {
+    /* space */
     margin: 0;
 }
 
 .main-container {
+    /* flex */
     display: flex;
     flex-direction: column;
+
+    /* size */
     min-height: 100vh;
+}
+.container {
+    /* space */
+    padding: 0 1vh;
+}
+header {
+}
+main {
 }
 footer {
     /* space */
