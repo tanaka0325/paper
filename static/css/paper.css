@@ -113,6 +113,8 @@ main { margin-bottom: 1vh; }
 .article-list .date {
     /* space */
     margin-right: 10px;
+    /* size */
+    min-width: 4.2rem;
     /* font */
     font-size: 0.7rem;
     color: hsl(0, 0%, 50%);
