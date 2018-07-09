@@ -7,10 +7,12 @@
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/atom-one-dark.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/paper.min.css">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
+    <link rel="preload" as="style" href="//fonts.googleapis.com/css?family=Source+Code+Pro">
+    <link rel="preload" as="style" href="{{ .Site.BaseURL }}css/atom-one-dark.min.css">
+    <link rel="preload" as="style" href="{{ .Site.BaseURL }}css/paper.min.css">
+    <link rel="preload" as="style" href="{{ .Site.BaseURL }}css/custom.css">
+
+    <link rel="preload" as="script" href="{{ .Site.BaseURL }}js/highlight.pack.js">
 
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/google_analytics_async.html" . }}
