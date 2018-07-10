@@ -1,0 +1,226 @@
+////////////
+// variables
+////////////
+$headerHeigth: 2vh;
+$footerHeight: 2vh;
+$lightestGray: hsl(0, 0%, 96%);
+$lightGray: hsl(0, 0%, 90%);
+$darkGray: hsl(0, 0%, 50%);
+$smallFont: 0.7rem;
+
+////////////
+// common
+////////////
+body { margin: 0 }
+
+////////////
+// layout
+////////////
+@media screen and (max-width:480px) {
+    .container { padding: 0 1vh }
+}
+@media screen and (min-width:480px) and ( max-width:800px) {
+    .container { padding: 0 2vh }
+}
+@media screen and (min-width:800px) {
+    .container {
+        // space
+        margin: 0 auto;
+        //size
+        width: 750px;
+    }
+}
+
+////////////
+// main-container
+////////////
+.main-container {
+    // flex
+    display: flex;
+    flex-direction: column;
+    // size
+    min-height: 100vh;
+}
+
+////////////
+// main
+////////////
+main {
+    // space
+    margin-bottom: 10vh;
+
+    .title: { margin-bottom: 0 }
+    .article-page {
+        h1 { font-size: 1.5rem }
+        h2 { font-size: 1.3rem }
+        h3 { font-size: 1.2rem }
+        h4 { font-size: 1.1rem }
+        h5 { font-size: 1.0rem }
+        h6 { font-size: 1.0rem }
+        blockquote {
+            // space
+            margin: 0;
+            padding: 0.1rem 0.7rem;
+            // background
+            background-color: $lightestGray;
+            // border
+            border-left: 0.3rem solid $darkGray;
+            // font
+            font-style: italic;
+            color: $darkGray;
+        }
+        pre { font-family: 'Source Code Pro', monospace }
+        code { font-family: 'Source Code Pro', monospace }
+        code:not(.hljs) {
+            // display:
+            display: inline-block;
+            // space
+            padding: 0 0.4rem;
+            // border
+            border: 1px solid #E1E1E1;
+            border-radius: 2px;
+            // background
+            background-color: #eeeeee;
+            // font
+            font-size: 0.9rem;
+        }
+        .date {
+            // space
+            margin: 0;
+            // font
+            font-size: $smallFont;
+            color: $darkGray;
+        }
+        .tags {
+            // flex:
+            display: flex;
+            // space
+            margin: 0;
+            padding: 0;
+            // list
+            list-style: none;
+
+            li {
+                //space
+                margin-right: 1rem;
+                &:last-child { margin-right: 0 }
+                a {
+                    // font
+                    text-decoration: none;
+                    color: $darkGray;
+                }
+            }
+        }
+
+    }
+    .article-list {
+        // space
+        margin: 0;
+        padding: 0;
+        // list
+        list-style: none;
+
+        li {
+            // space
+            margin: 0.4rem 0;
+            // flex
+            display: flex;
+            align-items: center;
+
+            .date {
+                // space
+                margin-right: 1rem;
+                // size
+                min-width: 4.2rem;
+                // font
+                font-size: $smallFont;
+                color: $darkGray;
+            }
+        }
+    }
+}
+
+////////////
+// header
+////////////
+header {
+    background-color: $lightestGray;
+
+    h2 {
+        // space
+        margin: 0;
+        padding: $headerHeigth 0;
+        // font
+        text-align: center;
+        a {
+            // font
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+////////////
+// footer
+////////////
+footer {
+    // space
+    margin-top: auto;
+    padding: $footerHeight 0;
+    // background
+    background-color: $lightestGray;
+    // font
+    text-align: center;
+    font-size: $smallFont;
+    color: $darkGray;
+}
+
+
+////////////
+// pagination
+////////////
+.pagination {
+    /* flex */
+    display: flex;
+    justify-content: center;
+    /* space */
+    padding: 0;
+    /* list */
+    list-style: none;
+
+    li {
+        // space
+        padding: 0 0.5rem;
+
+        a {
+            // font
+            text-decoration: none;
+            color: black;
+        }
+        &.active {
+            // background
+            background-color: $lightGray;
+            border-radius: 2px;
+            // font
+            a { color: black; }
+        }
+        &.disabled {
+            a {
+                // cursor
+                cursor: default;
+                pointer-events: none;
+                // font
+                color: $lightGray;
+            }
+        }
+        // replace paginate arrow
+        &:first-child span { font-size: 0 }
+        &:first-child span:after { font-size: 1rem; content: "<<" }
+        &:nth-child(2) span { font-size: 0 }
+        &:nth-child(2) span:after { font-size: 1rem; content: "<" }
+        &:nth-last-child(2) span { font-size: 0 }
+        &:nth-last-child(2) span:after { font-size: 1rem; content: ">" }
+        &:last-child span { font-size: 0 }
+        &:last-child span:after { font-size: 1rem; content: ">>" }
+    }
+}
