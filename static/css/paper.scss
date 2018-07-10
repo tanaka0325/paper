@@ -84,6 +84,19 @@ main {
             // font
             font-size: 0.9rem;
         }
+        table {
+            // space
+            margin: 0 auto;
+            // border
+            border-collapse: collapse;
+
+            th, td {
+                // space
+                padding: 5px;
+                // border
+                border: 1px solid $darkGray;
+            }
+        }
         .date {
             // space
             margin: 0;
