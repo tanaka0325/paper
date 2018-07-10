@@ -11,7 +11,18 @@ $smallFont: 0.7rem;
 ////////////
 // common
 ////////////
-body { margin: 0 }
+@font-face {
+  font-family: "YuGothic M";
+  src: local("Yu Gothic Medium"),
+       local("Yu Gothic");
+  font-weight: 500;
+}
+body {
+    // space
+    margin: 0;
+    // font
+    font-family: "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+}
 
 ////////////
 // layout
