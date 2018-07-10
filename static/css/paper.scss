@@ -1,8 +1,6 @@
 ////////////
 // variables
 ////////////
-$headerHeigth: 2vh;
-$footerHeight: 2vh;
 $lightestGray: hsl(0, 0%, 96%);
 $lightGray: hsl(0, 0%, 90%);
 $darkGray: hsl(0, 0%, 50%);
@@ -173,7 +171,7 @@ header {
     h2 {
         // space
         margin: 0;
-        padding: $headerHeigth 0;
+        padding: 2vh 0;
         // font
         text-align: center;
         a {
@@ -190,7 +188,7 @@ header {
 footer {
     // space
     margin-top: auto;
-    padding: $footerHeight 0;
+    padding: 2vh 0;
     // background
     background-color: $lightestGray;
     // font
